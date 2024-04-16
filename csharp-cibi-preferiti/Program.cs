@@ -21,7 +21,14 @@
             Console.WriteLine($"Cibo meno preferito: {CibiPreferiti[CibiPreferiti.Length - 1]}");
 
             // BONUS
-
+            int media = CibiPreferiti.Length / 2;
+            if (CibiPreferiti.Length % 2 == 0)
+            {
+                Console.WriteLine($"Cibo in mezzo: {CibiPreferiti[media - 1]} e {CibiPreferiti[media]}");
+            } else
+            {
+                Console.WriteLine($"Cibo in mezzo: {CibiPreferiti[media]}");
+            }
         }
     }
 }
